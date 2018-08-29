@@ -26,7 +26,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 40rem;
   background-color: #777;
 }
 .carousel-item > img {
@@ -43,8 +43,9 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
   text-align: center;
+  margin-top: 3rem;
 }
 .marketing h2 {
   font-weight: 400;
@@ -197,4 +198,5 @@ ul{
   .company-info h3, .company-info ul, .brand{
     text-align: left;
   }
-}a
+}
+

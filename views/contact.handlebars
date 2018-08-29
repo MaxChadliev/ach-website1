@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
+    
 
     <title>ACH Trucking</title>
 
@@ -29,15 +30,14 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#blah1">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Apply</a>
+              <a class="nav-link" href="#blah2">Apply</a>
             </li>
             
           </ul>
-          <!-- <form class="form-inline mt-2 mt-md-0">
-          </form> -->
+          
         </div>
       </nav>
     </header>
@@ -88,13 +88,13 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
+      
 
       <!-- Marketing messaging and featurettes
       ================================================== -->
       <!-- Wrap the rest of the page in another container to center all the content. -->
 
-      <div class="container marketing">
+      <div class="container marketing" id="blah1">
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
@@ -119,28 +119,28 @@
         <!-- START THE FEATURETTES -->
 
         <hr class="featurette-divider">
- <div class="container">
-    <h1 class="brand"><span>Acme</span> Web Design</h1>
+
+
+ <div class="container" id="blah2">
+    {{!-- <h1 class="brand"><span>ACH</span> Trucking</h1> --}}
     <div class="wrapper animated bounceInLeft">
       <div class="company-info">
-        <h3>Acme Web Design</h3>
+        <h3>ACH Trucking</h3>
         <ul>
-          <li><i class="fa fa-road"></i> 44 Something st</li>
           <li><i class="fa fa-phone"></i> (555) 555-5555</li>
-          <li><i class="fa fa-envelope"></i> test@acme.test</li>
+          <li><i class="fa fa-envelope"></i> achtrucking@gmail.com</li>
         </ul>
       </div>
       <div class="contact">
         <h3>Email Us</h3>
-        <form>
+        {{msg}}
+        {{!-- POST ROUTE --}}
+        <form method="POST" action="send">
           <p>
             <label>Name</label>
             <input type="text" name="name">
           </p>
-          <p>
-            <label>Company</label>
-            <input type="text" name="company">
-          </p>
+        
           <p>
             <label>Email Address</label>
             <input type="email" name="email">
@@ -149,12 +149,20 @@
             <label>Phone Number</label>
             <input type="text" name="phone">
           </p>
+        <div class="form-group" >
+            <label for="exampleFormControlSelect1">Subject</label>
+            <select class="form-control" name="exampleFormControlSelect1">
+              <option>Driver Application</option>
+              <option>General Inquiry</option>
+              <option>Other</option>
+            </select>
+        </div>
           <p class="full">
             <label>Message</label>
             <textarea name="message" rows="5"></textarea>
           </p>
           <p class="full">
-            <button>Submit</button>
+            <button type="submit">Submit</button>
           </p>
         </form>
       </div>
@@ -180,6 +188,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
-    <script src="contact.js"></script>
+    <script id="data"  type="application/json" src="../app.js"></script>
+
   </body>
 </html>
