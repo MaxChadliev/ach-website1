@@ -6,11 +6,21 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Playfair Display', serif;
 
 }
 
+.navbar {
+  height: 60px;
+  font-size: 25px;
+  position: fixed;
+  font-family: 'Rakkas', cursive;
 
+}
+
+#main {
+  font-size: 30px;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -200,3 +210,13 @@ ul{
   }
 }
 
+/* .resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+} */ 
+
+.container h1 {
+  text-align: center;
+  margin-top: -50px;
+}
