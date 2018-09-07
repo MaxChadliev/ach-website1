@@ -2,9 +2,11 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+
+
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 3.7rem;
+  padding-bottom: 2rem;
   color: #5a5a5a;
   font-family: 'Playfair Display', serif;
 
@@ -47,6 +49,21 @@ body {
   height: 32rem;
 }
 
+#blah1 {
+  max-width: 100%;
+  margin-top: 0px;}
+
+#blah2 {
+  background-color:lightpink;
+  max-width: 100%;
+  /* margin-bottom: -40px; */
+  height: 800px;
+}
+
+#blahh {
+  margin-top: -100px;
+}
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -56,6 +73,7 @@ body {
   margin-bottom: 0rem;
   text-align: center;
   margin-top: 3rem;
+  height: 300px;
 }
 .marketing h2 {
   font-weight: 400;
@@ -66,11 +84,14 @@ body {
 }
 
 
+
 /* Featurettes
 ------------------------- */
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  width: 0%;
+  margin-left: 10%
 }
 
 /* Thin out the marketing headings */
@@ -91,22 +112,25 @@ body {
     font-size: 1.25rem;
     line-height: 1.4;
   }
+  
 
   .featurette-heading {
     font-size: 50px;
   }
+
+  *{
+    box-sizing: border-box;
+  }
+
 }
 
-@media (min-width: 62em) {
+/* @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
   }
-}
+} */
 
 
-*{
-  box-sizing: border-box;
-}
 
 /* body{
   background:#92bde7;
@@ -116,10 +140,10 @@ body {
 } */
 
 .container{
-  max-width:1170px;
+  max-width:100%;
   margin-left:auto;
   margin-right:auto;
-  padding:1em;
+  /* padding:1em; */
 }
 
 ul{
@@ -209,6 +233,10 @@ ul{
     text-align: left;
   }
 }
+.animated {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;}
 
 /* .resp-container {
   position: relative;
@@ -218,5 +246,10 @@ ul{
 
 .container h1 {
   text-align: center;
-  margin-top: -50px;
+  /* margin-top: -50px; */
 }
+
+.container iframe {
+  pointer-events: none;
+}
+
