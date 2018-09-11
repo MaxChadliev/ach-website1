@@ -38,7 +38,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 40rem;
+  height: 56rem;
   background-color: #777;
 }
 .carousel-item > img {
@@ -51,19 +51,26 @@ body {
 
 #blah1 {
   max-width: 100%;
-  margin-top: 0px;}
+  min-height: 600px;
+  max-height: 100%;}
 
 #blah2 {
   background-color:lightpink;
   max-width: 100%;
   /* margin-bottom: -40px; */
-  height: 800px;
+  min-height: 56rem;
+  max-height: 100%;
 }
 
 #blahh {
-  margin-top: -100px;
+  padding-top: 100px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
+iframe, object, embed {
+  max-width: 100%;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -111,7 +118,7 @@ body {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
-  }
+    max-width: 350px   }
   
 
   .featurette-heading {

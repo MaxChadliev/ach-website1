@@ -4,9 +4,12 @@ const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
 const path = require('path');
 const xoauth2 = require('xoauth2');
+const hbs = require('hbs') 
+
+const AOS = require('aos');
+
 
 const app = express();
-
 
 
 
@@ -14,6 +17,8 @@ const app = express();
 
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
+
+
 
 //static folder
 app.use('/public', express.static(path.join(__dirname, 'public')))
@@ -77,6 +82,7 @@ app.post('/send', (req, res) => {
     res.render('contact', {msg:'Email has been sent'});
 });
 });
+
 
 
 app.listen(3000, () => console.log('Server started...'));

@@ -13,6 +13,8 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <!-- Custom styles for this template -->
     <link href="/public/style.css" rel="stylesheet">
@@ -46,7 +48,7 @@
 
     <main role="main">
 
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-aos="zoom-in">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -96,28 +98,28 @@
       ================================================== -->
       <!-- Wrap the rest of the page in another container to center all the content. -->
       <div class="container marketing" id="blah1">
-        <h1 >About Us</h1>
+        <h1 data-aos="flip-down">About Us</h1>
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="180" height="180">
+          <div class="col-lg-4" data-aos="flip-down" data-aos-duration="2500">
+            <img class="rounded-circle img-fluid" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="180" height="180">
             <br>
             <br>
             <h2>Heading</h2>
             <br>
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="180" height="180">
+          <div class="col-lg-4" data-aos="flip-down" data-aos-duration="2500">
+            <img class="rounded-circle img-fluid" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="180" height="180">
             <br>
             <br>
             <h2>Heading</h2>
             <br>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="180" height="180">
+          <div class="col-lg-4" data-aos="flip-down" data-aos-duration="2500">
+            <img class="rounded-circle img-fluid" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="180" height="180">
             <br>
             <br>
             <h2>Heading</h2>
@@ -133,7 +135,7 @@
 
   
 
- <div class="container" id="blah2">
+ <div class="container" data-aos="zoom-in" id="blah2">
    
            <h1>Contact Us</h1>
   <br>
@@ -184,11 +186,11 @@
     </div>
     <br>
   </div>
-        <hr class="featurette-divider">
+        {{!-- <hr class="featurette-divider"> --}}
          
 
         
-  <div class="container" id="blahh" align="center">
+  <div class="container " id="blahh" align="center" data-aos="fade-left"  data-aos-duration="2500" >
     {{!-- <h1 class="brand"><span>ACH</span> Trucking</h1> --}}
         <h1>Our Routes</h1>
         <br>
@@ -215,6 +217,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
     <script id="data"  type="application/json" src="../app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({
+    duration: 1500,
+    disable: function() {
+    var maxWidth = 800;
+    return window.innerWidth < maxWidth;
+  }
+    })</script>
+
 
   </body>
 </html>
