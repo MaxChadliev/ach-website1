@@ -5,20 +5,26 @@
 
 
 body {
-  padding-top: 3.7rem;
+  /* padding-top: 3.7rem; */
   padding-bottom: 2rem;
   color: #5a5a5a;
   font-family: 'Playfair Display', serif;
+  max-width: 100%;
+  margin: 0px;
 
 }
 
 .navbar {
   height: 60px;
   font-size: 25px;
-  position: fixed;
+  /* position: fixed; */
   font-family: 'Rakkas', cursive;
-
+  max-width: 100%;
+  margin: 0px;
+  
 }
+
+
 
 #main {
   font-size: 30px;
@@ -51,22 +57,44 @@ body {
 
 #blah1 {
   max-width: 100%;
-  min-height: 600px;
-  max-height: 100%;}
-
-#blah2 {
-  background-color:lightpink;
-  max-width: 100%;
-  /* margin-bottom: -40px; */
-  min-height: 56rem;
+  min-height: 80vh;
   max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+#blah1 h1{
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+#blah1 h2{
+  padding-bottom: 30px;
+  padding-top: 20px;
+
+}
+  #blah2 {
+    background-color: lightpink;
+    min-width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    vertical-align: top;
+  }
+    
+    #blahh {
+      max-width: 100%;
+      max-height: 100%;
+      min-height: 98vh;
+        }
+
+    #blahh h1 {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+#one {
+  position: relative
 }
 
-#blahh {
-  padding-top: 100px;
-  max-width: 100%;
-  max-height: 100%;
-}
+
 
 iframe, object, embed {
   max-width: 100%;
@@ -80,7 +108,6 @@ iframe, object, embed {
   margin-bottom: 0rem;
   text-align: center;
   margin-top: 3rem;
-  height: 300px;
 }
 .marketing h2 {
   font-weight: 400;
@@ -112,18 +139,15 @@ iframe, object, embed {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
+@media (min-width: 20em) {
   .carousel-caption p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
-    max-width: 350px   }
+    max-width: 100%;   }
   
 
-  .featurette-heading {
-    font-size: 50px;
-  }
+ 
 
   *{
     box-sizing: border-box;
@@ -131,11 +155,14 @@ iframe, object, embed {
 
 }
 
-/* @media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
+
+
+data-aos {
+  pointer-events: none;
+}
+aos-animate {
+    pointer-events: auto;
   }
-} */
 
 
 
@@ -150,8 +177,9 @@ iframe, object, embed {
   max-width:100%;
   margin-left:auto;
   margin-right:auto;
-  /* padding:1em; */
+   padding:1em; 
 }
+
 
 ul{
   list-style: none;
@@ -241,9 +269,11 @@ ul{
   }
 }
 .animated {
-  width: 80%;
+  width: 70%;
   margin: auto;
-  margin-top: 30px;}
+  margin-top: 120px;
+  margin-bottom: 120px;}
+
 
 /* .resp-container {
   position: relative;
@@ -259,4 +289,6 @@ ul{
 .container iframe {
   pointer-events: none;
 }
+
+
 
