@@ -22,6 +22,7 @@ app.set('view engine', 'handlebars');
 
 
 //static folder
+
 app.use('/public', express.static(path.join(__dirname, 'public')))
 
 //body parser middleware 
@@ -87,7 +88,9 @@ app.post('/send', (req, res) => {
 
 
 
-app.listen(3000, () => console.log('Server started...'));
+app.listen(process.env.PORT || 3000, () => console.log('Server started...'));
+
+
 
 
 
