@@ -5,6 +5,7 @@ const nodemailer = require('nodemailer');
 const path = require('path');
 const xoauth2 = require('xoauth2');
 const hbs = require('hbs') 
+// const favicon      = require('serve-favicon');
 
 const AOS = require('aos');
 
@@ -21,7 +22,8 @@ app.set('view engine', 'handlebars');
 
 
 
-//static folder
+//smytatic folder
+// app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 app.use('/public', express.static(path.join(__dirname, 'public')))
 
@@ -66,10 +68,10 @@ app.post('/send', (req, res) => {
   })
   // setup email data with unicode symbols
   var mailOptions = {
-    from: 'My Name <chad0441@gmail.com>',
-    to: 'maxim.chadliev@gmail.com',
-    subject: 'Nodemailer test',
-    text: 'Hello World!!',
+    from: 'ACH Website<achtrucking.kc@gmail.com>',
+    to: 'achtruckingjob@gmail.com',
+    subject: 'New Contact Request',
+    text: 'You have a new message',
     html: output
   }
 
