@@ -353,6 +353,7 @@ ul {
   margin: auto;
   margin-top: 120px;
   margin-bottom: 120px;
+
 }
 
 /* .resp-container {
@@ -458,6 +459,8 @@ button{
   transition:800ms ease all;
   outline:none;
   float:right;
+  border-radius: 5px;
+
 }
 button:hover{
   background:#fff;
