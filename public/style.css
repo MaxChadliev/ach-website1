@@ -10,19 +10,27 @@ body {
   max-width: 100%;
   margin: 0px;
 }
+.footer-copyright {
+  background: #3c3c3c;
+}
+
 
 .navbar {
   height: 60px;
-  font-size: 25px;
+  font-size: 30px;
   /* position: fixed; */
-  font-family: "Rakkas", cursive;
+  font-family: 'Rubik', sans-serif;
   max-width: 100%;
   margin: 0px;
+  font-weight: bold;
+  background-color: black !important;
 }
 
 #main {
   font-size: 30px;
 }
+
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -32,10 +40,24 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 40rem;
   z-index: 10;
 }
+.carousel-indicators li {
+  border-color: grey;
+}
 
+.carousel-indicators .active {
+  background-color: whitesmokec;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 56rem;
@@ -50,43 +72,45 @@ body {
   max-width: 100%;
 }
 
-#blah1 {
+#about {
   max-width: 100%;
   min-height: 80vh;
   max-height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-#blah1 h1 {
+#about h1 {
   padding-bottom: 50px;
   padding-top: 20px;
 }
-#blah1 h2 {
+#about h2 {
   padding-bottom: 30px;
   padding-top: 20px;
 }
 #blah2 {
-  background-color: lightpink;
+  background-color: #cdcdcd;
   min-width: 100%;
   min-height: 100vh;
   max-height: 100%;
   vertical-align: top;
 }
 
-#blahh {
+#routes {
   max-width: 100%;
   max-height: 100%;
   min-height: 98vh;
+  background: #3c3c3c;
 }
 
-#blahh h1 {
+#routes h1 {
   padding-top: 50px;
   padding-bottom: 50px;
+  color: black;
 }
 #blah2 h1 {
   padding-top: 50px;
 }
-#one {
+#contact {
   position: relative;
 }
 
@@ -181,14 +205,19 @@ ul {
 
 .wrapper {
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+  
 }
 
 .wrapper > * {
   padding: 1em;
 }
+.wrapper img {
+  width: 90%;
+  padding-top: 30px;
+}
 
 .company-info {
-  background: #c9e6ff;
+  background: #eddbcd;
 }
 
 .company-info h3,
@@ -198,7 +227,7 @@ ul {
 }
 
 .contact {
-  background: #f9feff;
+  background: #eddbcd;
 }
 
 /* FORM STYLES */
@@ -220,13 +249,17 @@ ul {
   grid-column: 1 / 3;
 }
 
-.contact form button,
+
 .contact form input,
 .contact form textarea {
   width: 100%;
   padding: 1em;
-  border: 1px solid #c9e6ff;
+  border: 1px solid black;
 }
+
+/* .contact button {
+  background-color: #eddbcd !important;
+  border: 1px solid black !important; }
 
 .contact form button {
   background: #c9e6ff;
@@ -240,7 +273,7 @@ ul {
   color: #fff;
   outline: 0;
   transition: background-color 2s ease-out;
-}
+} */
 
 /* LARGE SCREENS */
 @media (min-width: 700px) {
@@ -271,6 +304,7 @@ ul {
   overflow: hidden;
   padding-top: 56.25%;
 } */
+
 
 .container h1 {
   text-align: center;
@@ -349,3 +383,48 @@ body {
     opacity: 0;
   }
 }
+
+#img1{
+  text-align: center;
+}
+
+
+
+button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  float:right;
+}
+button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
