@@ -84,7 +84,7 @@ body {
 }
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 56rem;
+  height: 90vh;
   background-color: #777;
 }
 .carousel-item > img {
@@ -336,6 +336,37 @@ ul {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
+  }
+
+  @media (max-width: 747px){
+    #homepage .carousel .item img{
+      margin-top: 71px !important;
+      max-width:0px;
+      min-height:0%;
+    }/*
+    #homepage .carousel .item {
+      height:180px !important;
+    }*/
+    .carousel-inner {
+      height:auto;
+    }
+  }
+  @media (min-width: 748px){
+    #homepage .carousel .item img{
+      max-width:0px;
+      min-height:0%;
+    }/*
+    #homepage .carousel .item {
+      height:180px !important;
+    }*/
+  }
+  
+  @media (max-width: 1024px) and (min-width: 768px){
+    #homepage .carousel .item {
+      width: 100% !important;
+      /*margin-top: 20px !important;*/
+      height:396px !important;
+    }
   }
 
   .wrapper > * {
