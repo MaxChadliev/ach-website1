@@ -11,12 +11,12 @@ body {
   margin: 0px;
 }
 .footer-copyright {
-  background: #cdcdcd;
+  background: black;
 }
 
 
 .navbar {
-  height: 60px;
+  height: 13vh;
   font-size: 30px;
   /* position: fixed; */
   font-family: 'Rubik', sans-serif;
@@ -62,6 +62,17 @@ body {
   font-style: italic;
 
 }
+#drivers1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 90px;
+  font-weight: bolder;
+  text-shadow: 3px 3px grey;
+  font-style: italic;
+  color: white;
+  font-size: 70px;
+  
+
+}
 
 #caption2 {
   font-size: 70px;
@@ -85,7 +96,8 @@ body {
 }
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 90vh;
+  height: 100vh;
+  min-width:100%;
   background-color:black;
 
 }
@@ -131,8 +143,8 @@ body {
 
 }
 #contact {
-  background-color: #cdcdcd;
-  min-width: 100%;
+  background-color: black;
+  min-width: 100vh;
   min-height: 100vh;
   max-height: 100%;
   vertical-align: top;
@@ -143,7 +155,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   min-height: 98vh;
-  background: #3c3c3c;
+  background: black;
 }
 
 
@@ -163,7 +175,8 @@ body {
   text-shadow: 2px 2px grey;
   font-style: italic;
   font-family: 'Rubik', sans-serif;
-  font-size: 60px;
+  font-size: 70px;
+  color: white
 }
 #contact {
   position: relative;
@@ -272,7 +285,7 @@ ul {
 }
 
 .company-info {
-  background: #eddbcd;
+  background:#3D72A4;
 }
 
 .company-info h3,
@@ -282,7 +295,8 @@ ul {
 }
 
 .contact {
-  background: #eddbcd;
+  background: #3D72A4;
+  color: white
 }
 
 /* FORM STYLES */
