@@ -41,6 +41,8 @@ body {
   font-style: italic;
 }
 
+
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -52,11 +54,12 @@ body {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 40rem;
-  z-index: 10;
+  /* z-index: 10; */
+  display: fixed
 }
 .carousel-caption h1 {
   font-family: 'Rubik', sans-serif;
-  font-size: 90px;
+  font-size: 4vw;
   font-weight: bolder;
   text-shadow: 3px 3px grey;
   font-style: italic;
@@ -292,6 +295,9 @@ ul {
 .company-info ul {
   text-align: center;
   margin: 0 0 1rem 0;
+  color: white;
+  font-size: 1.5vw;
+  font-style: italic
 }
 
 .contact {
@@ -491,14 +497,24 @@ body {
   text-align: center;
 }
 
+#download {
+  font-size: 2vw;
+  color: white;
+  background-color: #1AAB8A;
+  border:none;
+  position:relative;
+  font-size:1.6em;
+  outline:none;
+  border-radius: 5px;
 
+}
 
 button{
   background:#1AAB8A;
   color:#fff;
   border:none;
   position:relative;
-  height:60px;
+  height:3vw;
   font-size:1.6em;
   padding:0 2em;
   cursor:pointer;
