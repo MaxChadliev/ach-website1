@@ -41,6 +41,16 @@ body {
   font-style: italic;
 }
 
+#colors {
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  0% { color: red; }
+  50% { color: white; }
+  100% { color: red; }
+}
+
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -296,7 +306,7 @@ ul {
   text-align: center;
   margin: 0 0 1rem 0;
   color: white;
-  font-size: 1.5vw;
+  font-size: 30px;
   font-style: italic
 }
 
